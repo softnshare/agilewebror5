@@ -9,7 +9,7 @@
 
 ###Interation D2:Connecting Products to Carts
 
-![](/home/kennychiu/rails_prj/agilewebror5/PartII/5.Task D: Cart Creation/sceenshot/ERD.png) 
+![](https://raw.githubusercontent.com/softnshare/agilewebror5/master/PartII/5.Task%20D%3A%20Cart%20Creation/sceenshot/ERD.png) 
 
 <table class="table table-bordered table-striped table-condensed">
 <tr>
@@ -52,6 +52,7 @@
 -  使用include model_name加入共用程式
 - params 包含透過browser傳遞的參數
 
+![](https://raw.githubusercontent.com/softnshare/agilewebror5/master/PartII/5.Task%20D%3A%20Cart%20Creation/sceenshot/ScriptFlow.png) 
 #### Reference
 - [URI Helper](http://api.rubyonrails.org/classes/ActionView/Helpers/UrlHelper.html) 
 - [實戰聖經|RESTful應用程式](https://ihower.tw/rails4/restful.html) 
