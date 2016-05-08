@@ -93,3 +93,86 @@ http://guides.rubyonrails.org/active_record_validations.html
 https://ihower.tw/rails4/activerecord-lifecycle.html
 
 https://robots.thoughtbot.com/the-perils-of-uniqueness-validations
+
+
+## Iteration B2: Unit Testing of Models
+
+筆記結構與書本略有不同。
+
+### 為什麼要寫測試
+* 正確
+* 穩定
+* 設計
+* 文件
+
+最重要的還是 **安心感！**
+
+### 開發模式
+TDD、BDD、...、XDD
+
+### 測試種類
+單元測試、整合測試、介面測試...
+
+### 測試工具
+
+* MiniTest
+* RSpec
+
+### Rails 會自動產生測試檔案
+使用 generator 產生 model 時，rails 會一併產生相關的測試檔案，如 model test、fixtures。
+
+```ruby
+rails g user
+```
+
+### Setup 測試環境
+
+rails 預設有三種不同的環境，development、test、production，若是要進行測試要記得 setup 測試環境。(有些公司會額外建立 staging 環境)
+
+```ruby
+rake db:create RAILS_ENV=test
+rake db:migrate RAILS_ENV=test
+```
+
+### A Real Unit Test
+
+test subject (測試目標)
+
+assert (期望結果)
+
+http://ruby-doc.org/stdlib-2.1.0/libdoc/minitest/rdoc/MiniTest/Assertions.html
+
+執行測試
+
+```
+bin/rails test:models
+```
+
+### Test Fixtures
+使用假資料進行測試
+
+https://github.com/thoughtbot/factory_girl
+
+### Using Fixture Data
+### What just we did
+
+### 補充資料
+
+> 地表最強 RSpec 男人 RailsConf 2014 Workshop
+
+https://www.youtube.com/watch?v=d2gL6CYaYwQ
+
+> 自動化測試
+
+https://ihower.tw/rails4/testing.html
+
+> 寫單元測試的好處
+
+http://blog.turn.tw/?p=2821
+
+> Juanito Fatas 的 rails 筆記，寫的很有趣
+
+https://ruby-china.org/topics/2832
+
+https://ruby-china.org/topics/2848
+
