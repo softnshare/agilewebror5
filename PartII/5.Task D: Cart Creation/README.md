@@ -11,28 +11,12 @@
 
 ![](https://raw.githubusercontent.com/softnshare/agilewebror5/master/PartII/5.Task%20D%3A%20Cart%20Creation/sceenshot/ERD.png) 
 
-<table class="table table-bordered table-striped table-condensed">
-<tr>
-  <th>Model A</th>
-  <th>Relation</th>
-  <th>Model B</th>
-</tr>
-<tr>
-   <td>has_many</td>
-  <td>1:n</td>
-  <td>belongs_to</td>
-</tr>
-<tr>
-   <td>has_one</td>
-  <td>1:1</td>
-  <td>belongs_to</td>
-</tr>
-<tr>
-   <td>has_and_belongs_to_many</td>
-  <td>n:n</td>
-  <td>has_and_belongs_to_many</td>
-</tr>
-</table>
+|Model A   | Relation   |Model B   |Example   |
+|---|---|---| --- |
+| has_many | 1:n	| belongs_to	| 購物車 : 商品明細 |
+| has_one | 1:1	| belongs_to	| 男人 : 妻子 |
+| has_and_belongs_to_many | 1:n	| has_and_belongs_to_many	|功能模組：組件 |
+
 
 - <code>has_many: :line_items, dependent: [action] </code>，常用action種類如下
     - destroy：會把相關連的資料也刪除，會執行line_items的destroy callback
@@ -53,6 +37,7 @@
 - params 包含透過browser傳遞的參數
 
 ![](https://raw.githubusercontent.com/softnshare/agilewebror5/master/PartII/5.Task%20D%3A%20Cart%20Creation/sceenshot/ScriptFlow.png) 
+
 #### Reference
 - [URI Helper](http://api.rubyonrails.org/classes/ActionView/Helpers/UrlHelper.html) 
 - [實戰聖經|RESTful應用程式](https://ihower.tw/rails4/restful.html) 
