@@ -94,8 +94,8 @@ http://guides.rubyonrails.org/action_controller_overview.html#filters
 
 https://ihower.tw/rails4/actioncontroller.html
 
-#### Discussion
-##### Loging and Authetication tools(gem)
+## Discussion
+### Loging and Authetication tools(gem)
 - rorify
 - cancancan
 - devise
