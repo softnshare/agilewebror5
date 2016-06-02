@@ -93,3 +93,14 @@ NOTE: Filters are inherited, so if you set a filter on ApplicationController, it
 http://guides.rubyonrails.org/action_controller_overview.html#filters
 
 https://ihower.tw/rails4/actioncontroller.html
+
+#### Discussion
+##### Loging and Authetication tools(gem)
+- rorify
+- cancancan
+- devise
+- request_store
+- administrate
+- activeadmin
+- pundit 
+
